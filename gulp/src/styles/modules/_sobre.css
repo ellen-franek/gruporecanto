@@ -1,0 +1,131 @@
+.pag-sec-sobre{
+    .title-section{
+        text-transform: initial;
+        h2{
+            font-size: 3.3vw;
+            @mixin atMedium{
+                font-size: 6vw;
+            }
+        }
+    }
+    .banner-top{
+        .item-banner{
+            figure{
+                background-color: #fff;
+            }
+        }
+    }
+    
+    .valores{
+        .flex{
+            align-items: stretch;
+            @mixin atMedium{
+                align-items: center;
+            }
+            .item-box{
+                width: 100%;
+                padding: 3vw 5vw;
+                background: $color-blue;
+                &:first-child{padding-left: 5vw;}
+                &:last-child{padding-right: 5vw;}
+                @mixin atMedium{
+                    padding: 5vw;
+                }
+                /* &:nth-child(1){
+                    background: #282d7d;
+                    .title-section{
+                        h2{color:#0f134a;}
+                        &:before{
+                            background:#0f134a;
+                        }
+                    }
+                    .text{
+                        color: #0f134a;
+                    }
+                } */
+                /* &:nth-child(2){
+                    background: #3b41a3;
+                    .title-section{
+                        h2{color:#21267c;}
+                        &:before{
+                            background:#21267c;
+                        }
+                    }
+                    .text{
+                        color: #21267c;
+                    }
+                } */
+                /* &:nth-child(3){
+                    background: #4e54c4;
+                    .title-section{
+                        h2{color:#21267c;}
+                        &:before{
+                            background:#21267c;
+                        }
+                    }
+                    .text{
+                        color: #21267c;
+                    }
+                } */
+                .title-section{
+                    text-align: center;
+                    margin-bottom: 3vw;
+                    .title-line-bottom{
+                        width: 50%;
+                        left: 50%;
+                        margin-left: -25%;
+                    }
+                    
+                }
+                .text{
+                    @mixin fontDefSemi;
+                    font-size: 1.2vw;
+                    line-height: 1.5vw;
+                    text-align: left;
+                    @mixin atMedium{
+                        font-size: 3.5vw;
+                        line-height: 4.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.texto_gruporecanto, .responsabilidadesocial_descricao {
+    font-family: moskultra-bold_900;
+    h2{
+        @mixin fontDef;
+        font-size: 3.2vw;
+        padding: 3.5vw 0 1.5vw 0;
+        color: $color-gray;
+        @mixin atMedium{
+            font-size: 6vw;
+        }
+    }
+    h4 {
+        @mixin fontDef;
+        font-size: 1.4vw;
+        color: $color-gray;
+        margin-bottom: 2vw;
+        color: #7d7d7d;
+        @mixin atMedium{
+            font-size: 6vw;
+        }
+    }
+    p {
+        @mixin fontDefSemi;
+        color: #b3b3b3;
+        font-size: 1.1vw;
+        line-height: 1.7vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        @mixin atMedium{
+            font-size: 3.8vw;
+            line-height: 6.5vw;
+            margin-top: 1vw;
+            margin-bottom: 3vw;
+        }
+        
+    }
+}

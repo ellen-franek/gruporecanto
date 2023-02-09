@@ -1,0 +1,124 @@
+.timeline {
+    margin-bottom: 40px;
+    margin-left: -2px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+
+    @mixin atMedium {
+        display: none;
+    }
+    & .owl-stage-outer {
+        overflow: initial;
+        @mixin atMedium {
+            overflow: initial;
+        }
+    }
+    & .owl-item {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .item {
+            width: 120px;
+            height: 120px;
+            border: 3px solid #999999;
+            border-radius: 50%;
+            position: relative;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & .info {
+                display: none;
+                text-align: left;
+                position: absolute;
+                bottom: calc(100% + 50px);
+                left: 75px;
+                width: fit-content;
+
+                & .ano {
+                    @mixin fontDefSemi;
+                    color: $color-green;
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                & .texto {
+                    @mixin fontDef;
+                    color: rgba(#000000, .4);
+                }
+            }
+        }
+
+        &.active {
+            & .item {
+                & .info {
+                    display: block;
+                }
+            }
+        }
+        &:before {
+            content: '';
+            height: 85px;
+            width: 3px;
+            background-color: #999999;
+            position: absolute;
+            bottom: calc(100% + 5px);
+            z-index: 9999;
+        }
+        &:after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: transparent;
+            position: absolute;
+            top: -105px;
+            border: 3px solid #999999;
+            border-radius: 50%;
+            margin-left: .5px;
+        }
+        &:nth-child(even) {
+            & .info {
+                bottom: calc(-100% + 0px);
+            }
+            &:before {
+                bottom: calc(-100% + 30px);
+            }
+            &:after {
+                content: '';
+                top: initial;
+                bottom: -105px;
+            }
+        }
+        &:nth-child(odd) {
+            & .info {
+                @mixin atMedium {
+                    left: -75px;
+                    text-align: right;
+                }
+            }
+        }   
+    }
+    & .owl {
+        &-nav {
+            top: 50%;
+            left: 0;
+            right: 0;
+        }
+        &-prev, &-next {
+            position: absolute;
+            width: 3vw;
+            height: 3vw;
+        }
+        &-prev {
+            left: 0;
+        }
+        &-next {
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+[20-Apr-2022 12:38:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/gruporecanto/public_html/wp-content/themes/gruporecanto/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/gruporecanto/public_html/wp-content/themes/gruporecanto/404.php on line 1
+[21-Apr-2022 15:47:36 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/gruporecanto/public_html/wp-content/themes/gruporecanto/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/gruporecanto/public_html/wp-content/themes/gruporecanto/404.php on line 1
+[27-Jun-2022 05:51:22 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/gruporecanto/public_html/wp-content/themes/gruporecanto/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/gruporecanto/public_html/wp-content/themes/gruporecanto/404.php on line 1

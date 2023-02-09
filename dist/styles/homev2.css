@@ -1,0 +1,348 @@
+/* FONT */
+
+/* BANNER */
+.homev2 .banner-top,
+.homev2 .banner-top .item-banner {
+    height: 450px;
+}
+@media (max-width: 768px) {
+    .homev2 .banner-top, .homev2 .banner-top .item-banner {
+        height: auto;
+    }
+}
+.homev2.main .item-banner .banner-left{
+    width: 100% !important;
+}
+
+.homev2.main .item-banner .text-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 100% !important;
+    align-items: center;
+}
+
+.homev2.main .item-banner .text-banner h2,
+.homev2.main .item-banner .text-banner span,
+.homev2.main .item-banner .text-banner p {
+    color: #ffffff !important;
+    background-color: #282d7d;
+    padding: 10px;
+    margin: -1px 0;
+}
+.homev2.main .item-banner .text-banner p {
+    text-transform: initial;
+    font-size: 20px;
+    font-family: 'mosksemi-bold_600';
+}
+
+.homev2.main .item-banner .text-banner h2 {
+    font-size: 34px;
+    line-height: 1.35;
+    padding: 5px 20px;
+}
+@media (max-width: 768px) {
+    .homev2.main .item-banner .text-banner h2 {
+        font-size: 22px;
+    }
+}
+
+.homev2.main .item-banner .text-banner span {
+    line-height: 1.5;
+    font-size: 1.5vw;
+}
+
+.homev2.main .item-banner .text-banner img {
+    width: 50%;
+    margin: 0 auto;
+}
+.homev2 .banner-top .item-banner figure img {
+    object-position: center center !important;
+}
+
+@media (max-width: 768px) {
+    .homev2.main .item-banner .text-banner img {
+        width: 90%;
+    }
+    .banner-top .item-banner figure img {
+        object-position: 50% 50%;
+    }
+}
+
+.homev2 .banner-top .owl-dots {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/* ESPECIALIDADES */
+.homev2 .especialidades ul li {
+    border: 1px solid #bad216;
+    padding: 10px 10px;
+    width: fit-content;
+}
+.homev2 .especialidades .card-numbers {
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    .homev2 .especialidades .card-numbers {
+        padding: 0 10px;
+    }   
+}
+
+.homev2 .especialidades .card-numbers .item-card .opt-card {
+    justify-content: flex-start;
+}
+@media (max-width: 768px) {
+    .homev2 .especialidades .card-numbers .item-card .opt-card {
+        height: 100%;
+    }
+}
+
+.homev2 .especialidades .card-numbers .item-card .text-card h3 br {
+    display: contents;
+}
+
+.homev2 .especialidades .card-numbers .item-card .text-card {
+    margin-left: 8vw;
+    font-size: 1vw;
+}
+
+@media (max-width: 768px) {
+    .homev2 .especialidades .card-numbers .item-card .text-card {
+        margin-left: 20px;
+        font-size: 16px;
+        line-height: 1.35;
+    }   
+}
+
+.homev2 .especialidades .card-numbers .item-card {
+    height: 100px;
+    margin-right: 0;
+    margin-bottom: 1vw;
+}
+@media (max-width: 768px) {
+    .homev2 .especialidades .card-numbers .item-card {
+        margin: 1vw auto;
+    }
+}
+.homev2 .especialidades .card-numbers .item-card:first-child {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 40px;
+}
+.homev2 .especialidades .card-numbers .item-card:last-child {
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 0;
+}
+.homev2 .especialidades .card-numbers .item-card .number-bg {
+    font-size: 7.5vw;
+}
+@media (max-width: 768px) {
+    .homev2 .especialidades .card-numbers .item-card .number-bg {
+        font-size: 90px;
+    }
+}
+
+/* ESPECIALISTAS */
+.homev2 .especialistas {
+    padding-bottom: 0;
+}
+.especialistas .owl-nav {
+    left: 60px;
+}
+.homev2 .especialistas .item-especialista .info-especialista .photo-doctor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.homev2 .especialistas .item-especialista .info-especialista .photo-doctor img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.homev2 .especialistas .item-especialista .info-especialista .flex-column {
+    width: 100%;
+    padding: 2vw 0 0 2vw;
+}
+.homev2 .especialistas .item-especialista .info-especialista {
+    height: auto;
+    margin-left: 60px;
+}
+.homev2 .especialistas .slide-especialistas,
+.homev2 .especialistas .padrao-etico {
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .homev2 .especialistas .item-especialista .info-especialista {
+        margin-left: 0;
+    }
+    .homev2 .especialistas .item-especialista .info-especialista .photo-doctor {
+        justify-content: center;
+    }
+    .homev2 .especialistas .slide-especialistas {
+        margin-bottom: 20px;
+    }
+    .homev2 .especialistas .slide-especialistas,
+    .homev2 .especialistas .padrao-etico {
+        width: 100%;
+    }
+}
+
+/* PADRÃO ÉTICO */
+.homev2 .padrao-etico .title-section {
+    width: 100%;
+}
+.homev2 .padrao-etico .flex-part.text {
+    padding: 20px 20px 0 0;
+}
+.homev2 .padrao-etico .title-section.line-bottom::before {
+    width: 20%;
+    height: 1px;
+}
+
+/* TIMELINE */
+.homev2 .timeline {
+    margin-bottom: 0;   
+}
+
+/* BUTTONS */
+.homev2 .btn__v2 {
+    color: #778802;
+    border: 1px solid #778802;
+    margin-top: 20px;
+    padding: 10px 30px;
+    width: 90%;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.homev2 .btn__v3 {
+    background-color: #bad216;
+    color: #778802;
+    padding: 10px 30px;
+    width: fit-content;
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* PLANO DE SAUDE */
+.homev2 .plano-saude-sec .item {
+    width: calc((100% / 4) - 20px) !important;
+    height: 100px !important;
+    border: 1px solid rgba(40, 45, 125, 0.2);
+    margin: 10px;
+    border-radius: 6px;
+}
+@media (max-width: 768px) {
+    .homev2 .plantao-video .text h2 {
+        font-size: 5vw;
+    }
+    .homev2 .plantao-video .text {
+        flex-direction: column;
+    }
+    .homev2 .plano-saude-sec .content-center {
+        width: 90%;
+    }
+
+    .homev2 .plano-saude-sec .item {
+        width: calc((100% / 3) - 20px) !important;
+        height: 60px !important;
+        padding: 10px;
+    }
+    .homev2 .plano-saude-sec .item img{
+        width: 100%;
+    }
+}
+.homev2 .plano-saude {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ESTRUTURA */
+.homev2 .estrutura {
+    margin-top: 20px;
+}
+.homev2 .sec-page-unidades .list-cards .item-card {
+    width: 90% !important;
+    margin: 0 auto;
+}
+
+.owl-carousel .owl-stage-outer {
+    z-index: 100;
+}
+.homev2 .estrutura .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    right: -40px;
+}
+.homev2 .estrutura .owl-prev, .homev2 .estrutura .owl-next {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+}
+.homev2 .estrutura .owl-prev {
+    left: 0;
+}
+.homev2 .estrutura .owl-next {
+    right: 0;
+}
+
+
+@media (max-width: 768px) {
+    .homev2 .sec-sos-drogas-noticias .sidebar {
+        padding-left: 0;
+    }
+    .homev2 .estrutura .owl-nav {
+        left: 0;
+        right: 0;
+    }
+    .homev2 .estrutura .owl-prev, .homev2 .estrutura .owl-next {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* CONTATO */
+.homev2 .contato {
+    background-color: #282d7d;
+}
+.homev2 .contato .title-section h2 {
+    color: #ffffff;
+}
+.homev2 .contato .form-mod a,
+.homev2 .contato .form-mod p,
+.homev2 .contato .form-mod label {
+    color: #ffffff !important;
+}
+.homev2 .contato .form-mod input, .homev2 .contato .form-mod select, .homev2 .contato .form-mod textarea {
+    background-color: #5e65c9;
+    color: #ffffff;
+}
+
+.homev2 .contato .unidades,
+.homev2 .contato .unidades:hover .title-section h2 {
+    background-color: #5e65c9;
+    color: #ffffff !important;
+}
+
+/* BLOG */
+.homev2 .btn__blog {
+    width: fit-content;
+    margin: 0 auto;
+}

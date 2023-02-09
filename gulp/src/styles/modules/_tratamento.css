@@ -1,0 +1,144 @@
+.sec-page-tratamento{
+    .banner-top{
+        height: auto;
+        overflow: hidden;
+        figure{
+            position: relative;
+        }
+        .item-banner{
+            display: flex;
+            justify-content: flex-start;
+            align-items: stretch;
+            height: 42.5vw;
+            @mixin transition;
+            .text-see-more{@mixin transition;}
+            @mixin atMedium{
+                flex-direction: column-reverse;
+                justify-content: center;
+                height: auto;
+                .text-see-more{
+                    height: 55vw;
+                }
+            }
+            &.show-content{
+                height: 61vw;
+                @mixin atMedium{
+                    height: auto;
+                }
+                .text-see-more{
+                    @mixin atMedium{
+                        height: 125vw;
+                    }
+                    &:before{background: transparent;}
+                }
+            }
+        }
+    }
+    .tripe-terapia{
+        @mixin fontDef;
+        .flex{
+            align-items: stretch;
+        }
+        .img-tripe{
+            background: #eeeeee;
+            position: relative;
+            width: 49%;
+            padding:0 5vw 3.8vw;
+            border-right: 1px solid #fff;
+            @mixin atMedium{
+                width: 100%;
+            }
+            figure{
+                width: 100%;
+                height: 24vw;
+                margin: 0 auto;
+                @mixin atMedium{
+                    height: 40vw;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .title-simple{
+                position: relative;   
+            }
+        }
+        .container-tabs .conteudo-tabs:first-child{display: block !important;}
+    }
+    .text-middle{
+        background: #fff;
+        @mixin atMedium{
+            padding: 8vw 0;
+        }
+        .title-section{
+            width: 40%;
+            padding-right: 3vw;
+            @mixin atMedium{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 4vw;
+                br{display: none;}
+            }
+            h2{
+                font-size: 3vw;
+                color: #a4a4a3;
+                @mixin atMedium{font-size: 5vw;}
+            }
+        } 
+    }
+
+    .title-simple {
+        padding-bottom: 1.5vw;
+        @mixin atMedium {
+            padding: 3vw 0;
+        }
+    }
+    .subtitle-simple {
+        text-transform: initial;
+        font-size: .8em;
+    }
+    .text-box {
+        padding-top: 1vw;
+        @mixin atMedium {
+            padding-top: 2vw;
+        }
+    }
+
+    .tratamento__descricao {
+        margin-top: 2.5vw;
+        margin-bottom: 1.5vw;
+       @mixin atMedium {
+            padding: 3vw 0;
+        }
+        & h2 {
+            text-transform: uppercase;
+            color: #c3c4c6;
+        }
+        & h4 {
+            text-transform: initial;
+            font-size: 1.84vw;
+            color: #7d7d7d;
+            @mixin atMedium {
+                font-size: 3.3vw;
+            }
+        }
+        p{
+            @mixin fontDefSemi;
+            color: #b3b3b3;
+            font-size: 1.1vw;
+            line-height: 1.7vw;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+            @mixin atMedium{
+                font-size: 3.8vw;
+                line-height: 6.5vw;
+                margin-top: 1vw;
+                margin-bottom: 3vw;
+            }
+        }
+    }
+}
+
+

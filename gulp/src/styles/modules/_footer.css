@@ -1,0 +1,20 @@
+footer{
+    @mixin fontDef;
+    position: relative;
+    padding: 2vw 0;
+    background: #4349a2;
+    color: $color-blue;
+    font-size: 1.5vw;
+    text-align: center;
+    @mixin atMedium{
+        font-size: 3.5vw;
+        padding: 4vw;
+    }
+    a{
+        color: $color-blue;
+        @mixin transition;
+        &:hover{
+            color: #fff;
+        }
+    }
+}

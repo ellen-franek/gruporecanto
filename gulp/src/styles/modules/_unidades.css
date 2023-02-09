@@ -1,0 +1,157 @@
+.sec-page-unidades{
+    .banner-top{
+        height: auto;
+        overflow: hidden;
+        figure{
+            position: relative;
+        }
+        .item-banner{
+            display: flex;
+            justify-content: flex-start;
+            align-items: stretch;
+            height: 38.5vw;
+            @mixin atMedium{
+                flex-direction: column-reverse;
+                height: auto;
+
+            }
+        }
+        .text-see-more{
+            position: relative;
+            text-align: justify;
+            font-size: 1.2vw;
+            line-height: 1.6vw;
+            color: #ffffff;
+            width: 61%;
+            height: 100%;
+            padding: 4vw 5vw;
+            background: #282d7d;
+            @mixin atMedium{
+                width: 100%;
+                font-size: 4vw;
+                line-height: 5.5vw;
+            }
+            &:before{display: none;}
+            .title-section{
+                text-transform: uppercase;
+                padding-bottom: 2vw;
+                @mixin atMedium{
+                    padding-bottom: 3vw;
+                    margin-bottom: 5vw;
+                    br{display: none;}
+                }
+                &:before{
+                    content: '';
+                    background: #7076ca;
+                }
+                h2{
+                    font-size: 2.8vw;
+                    line-height: 3vw;
+                    color: #ffffff;
+                    @mixin atMedium{
+                        font-size: 5vw;
+                        line-height: 6vw;
+                    }
+                }
+               
+            }
+           
+        }
+    }
+    .list-cards{
+        @mixin fontDef;
+        display: flex;
+        padding: 3vw 0;
+        .flex{
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-around;
+            @mixin atMedium{
+                justify-content: space-between;
+                flex-direction: row;
+            }
+        }
+        .item-card{
+            width: 31%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: #f1f1f1;
+            margin-bottom: 1.8vw;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            @mixin atMedium{
+                width: 48%;
+                margin-bottom: 3vw;
+            }
+            figure{
+                cursor: pointer;
+                @mixin atMedium{
+                    height: 30vw;
+                }
+                img{
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                    @mixin atMedium {
+                        height: 100%;
+                    }
+                }
+            }
+            .button-mod{
+                font-size: 1vw;
+                padding: 0.4vw 1vw;
+                @mixin atMedium{
+                    font-size: 4vw;
+                    padding: 1.5vw 4vw;
+                    margin-bottom: 3vw;
+                    display: none;
+
+                }
+            }
+            .title-section{
+                text-transform: initial;
+                @mixin atMedium{
+                    padding-bottom: 4vw;
+                }
+                &:before{
+                    width: 100%;
+                    background: #bfbfbf;
+                    @mixin atMedium{height: 2px;}
+                }
+                h2{
+                    color: $color-green;
+                    font-size: 1.6vw;
+                    @mixin atMedium {
+                        font-size: 3.2vw;
+                    }
+                }
+                span{
+                    color: #bfbfbf;
+                    font-size: 1vw;
+                    margin-top:.5vw;
+                    @mixin atMedium{
+                        font-size: 4vw;
+                        margin-top: 4vw;
+                    }
+                }
+            }
+        }
+        .text{
+            @mixin fontDefSemi;
+            font-size: 1.1vw;
+            line-height: 1.4vw;
+            color: #bfbfbf;
+            padding: 1.5vw 2vw;
+            @mixin atMedium{
+                padding: 4vw;
+                font-size: 3vw;
+                line-height: 4.5vw;
+            }
+            .flex{
+                justify-content: space-between;
+            }
+
+        }
+    }
+}

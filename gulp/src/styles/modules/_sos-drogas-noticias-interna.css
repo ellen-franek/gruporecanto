@@ -1,0 +1,100 @@
+.interna-post{
+    & h1, h2, h3, h4, h5, h6, p, a, span, button {
+        font-family: 'Avenir Next LT Pro Regular' !important;
+    }
+    .list-noticias{
+        & * {
+            font-family: 'Avenir Next LT Pro Regular' !important; 
+        }
+        .item-noticias{
+            flex-direction: column;
+            height: auto;  
+            background: #fff;
+            color: $color-gray-dark;
+            
+            & h2{
+                font-size: 1.8vw;
+                line-height: 1.8vw;
+                margin: 20px 0;
+                color: $color-gray-dark;
+                display: inline-block;
+                @mixin atMedium{
+                    font-size: 6vw;
+                    line-height: initial;
+                }
+            }
+            & h3 {
+                display: inline-block;
+                margin: 10px 0;
+            }
+
+            p{
+                font-size: 1.2vw;
+                line-height: 1.8vw;
+                /* margin: 10px 0; */
+                color: $color-gray-dark;
+                & span {
+                    line-height: 1.8vw;
+                }
+                & a {
+                    color: $color-blue-link;
+                    & * {
+                        color: $color-blue-link !important;
+                    }
+                }
+            }
+
+            .title-section{
+                h2{
+                    font-size: 2.5vw;
+                    line-height: 2.5vw;
+                    color: $color-gray-dark;
+                    @mixin atMedium{
+                        font-size: 1em;
+                        line-height: initial;
+                    }
+                }
+            }
+            .text{
+                font-size: 1.2vw;
+                line-height: 1.8vw;
+                p{
+                    color: $color-gray-dark;
+                    font-size: 1em;
+                    /* line-height: initial; */
+                    @mixin atMedium {
+                        line-height: initial;
+                    }
+                }
+                
+                @mixin atMedium{
+                    font-size: 4vw;
+                    line-height: 6vw;
+                } 
+            }
+            figure{
+                height: 30vw;
+                @mixin atMedium{
+                    height: 70vw;
+                }
+            }
+
+            & .text-post {
+                & .text {
+                    & img {
+                        width: initial;
+                        height: initial;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    &__title {
+        text-transform: initial;
+    }
+}
+.teste{
+    border: 4px solid red;
+}

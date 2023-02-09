@@ -1,0 +1,47 @@
+/* font */
+
+@define-mixin fontDef{
+	font-family: 'moskultra-bold_900';
+}
+
+@define-mixin fontDefSemi{
+	font-family: 'mosksemi-bold_600';	
+}
+
+@define-mixin transition{
+	transition: .3s all ease;
+}
+
+@define-mixin atSmall {
+	@media (max-width: 640px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium {
+	@media (max-width: 768px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge {
+	@media (min-width: 1200px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atXLarge {
+	@media (min-width: 1440px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+
+

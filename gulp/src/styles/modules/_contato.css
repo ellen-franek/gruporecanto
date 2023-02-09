@@ -1,0 +1,85 @@
+.contato{
+    background: $color-box-gray;
+    padding: 3vw 0;
+    margin-bottom: 55px;
+    @mixin atMedium{
+        padding: 5vw 0;
+        margin-bottom: 48px;
+    }
+    .content-center{
+        width: 60%;
+        @mixin atMedium{
+            width: 90%;
+        }
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .title-section{
+        width: 40%;
+        margin-bottom: 2vw;
+        h2{
+            font-size: 2.5vw;
+            line-height: 3vw;
+            color: $color-blue;
+            @mixin atMedium{
+                font-size: 4.5vw;
+                line-height: 5vw;
+            }
+        }
+    }
+    .part-flex{
+        width: 100%;
+    }
+
+    .unidades{
+        width: fit-content;
+        display: block;
+        @mixin fontDefSemi;
+        background: $color-green;
+        color: $color-green-dark;
+        text-align: center;
+        padding: 3vw;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 2vw auto;
+        @mixin transition;
+        @mixin atMedium{
+            padding: 5vw;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            .text{
+                font-size: 3.5vw;
+            }
+        }
+        &:hover{
+            color: #5c6312;
+            .title-section{
+                h2{
+                    color: #5c6312;
+                }
+            }
+        }
+        .title-section{
+            width: 100%;
+            margin-bottom: 0vw;
+            h2{
+                @mixin transition;
+                color: $color-green-dark;
+            }
+        }
+    }
+    & .input-curriculo {
+        width: 100%;
+    }
+}
+
+.wpcf7-form {
+
+    & p, & label, & [data-class="wpcf7cf_group"] {
+        width: 100%;
+    }
+}
+.wpcf7-form-control-wrap {
+    width: 100%;
+}
